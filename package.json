@@ -1,0 +1,49 @@
+{
+  "name": "cevex",
+  "private": true,
+  "description": "A website for the company Cevex",
+  "version": "0.1.0",
+  "author": "@czuforb",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "gatsby": "^2.19.7",
+    "gatsby-background-image": "^0.9.17",
+    "gatsby-image": "^2.2.41",
+    "gatsby-plugin-postcss": "^2.1.20",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-source-wordpress": "^3.1.60",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-responsive-menubar": "^1.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

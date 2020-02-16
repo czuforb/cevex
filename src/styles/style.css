@@ -1,0 +1,109 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.hero-bg {
+  background-image: url("../imgs/hero-background.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-bg2 {
+  background-image: url("../imgs/backgrounds/background-road1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-bg3 {
+  background-image: url("../imgs/backgrounds/background-road2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+nav[data-active="true"] {
+  @apply shadow-xl bg-gray-100;
+}
+
+.bg-yllw-00 {
+  background-color: #ffa600;
+}
+.bg-yllw-90 {
+  background-color: #ffaf1a;
+}
+.bg-yllw-80 {
+  background-color: #ffc14d;
+}
+.bg-yllw-70 {
+  background-color: #ffc14d;
+}
+.bg-yllw-60 {
+  background-color: #ffca66;
+}
+.bg-yllw-50 {
+  background-color: #ffd380;
+}
+.bg-yllw-40 {
+  background-color: #ffdb99;
+}
+.bg-yllw-30 {
+  background-color: #ffe4b2;
+}
+.bg-yllw-20 {
+  background-color: #ffedcc;
+}
+.bg-yllw-10 {
+  background-color: #fff6e5;
+}
+
+.bg-bl-00 {
+  background-color: #002a54;
+}
+.bg-bl-20 {
+  background-color: #1a63ad;
+}
+.bg-bl-10 {
+  background-color: #afc6de;
+}
+
+.cl-yllw-00 {
+  color: #ffa600;
+}
+.cl-yllw-90 {
+  color: #ffaf1a;
+}
+.cl-yllw-80 {
+  color: #ffc14d;
+}
+.cl-yllw-70 {
+  color: #ffc14d;
+}
+.bclyllw-60 {
+  bolor: #ffca66;
+}
+.cl-yllw-50 {
+  color: #ffd380;
+}
+.cl-yllw-40 {
+  color: #ffdb99;
+}
+.cl-yllw-30 {
+  color: #ffe4b2;
+}
+.cl-yllw-20 {
+  color: #ffedcc;
+}
+.cl-yllw-10 {
+  color: #fff6e5;
+}
+
+.cl-bl-00 {
+  color: #002a54;
+}
+.cl-bl-20 {
+  color: #1a63ad;
+}
+.cl-bl-10 {
+  color: #afc6de;
+}
