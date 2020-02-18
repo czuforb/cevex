@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["page404"],"mappings":"2FAAA,gCAUeA,UARC,WACd,OACE,6BACE","file":"component---src-pages-404-js-30769c6035ed32bb7e6a.js","sourcesContent":["import React from \"react\"\n\nconst page404 = () => {\n  return (\n    <div>\n      <h1>404040404</h1>\n    </div>\n  )\n}\n\nexport default page404\n"],"sourceRoot":""}
