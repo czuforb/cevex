@@ -1,5 +1,4 @@
 import React from "react"
-import avatar from "../imgs/avatar.png"
 
 const Testimonial = ({ img, name, quote }) => {
   return (

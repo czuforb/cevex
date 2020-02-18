@@ -4,18 +4,16 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
-import Hero2 from "../components/Hero2"
-import Hero3 from "../components/Hero3"
 
 import RefCard from "../components/RefCard"
 import Testimonial from "../components/Testimonial"
 
 import "animate.css/animate.min.css"
 
-import avatar1 from "../imgs/avatars/avatar-1.png"
-import avatar2 from "../imgs/avatars/avatar-2.png"
-import avatar3 from "../imgs/avatars/avatar-3.png"
-import avatar4 from "../imgs/avatars/avatar-4.png"
+import avatar1 from "../../static/avatars/avatar-1.png"
+import avatar2 from "../../static/avatars/avatar-2.png"
+import avatar3 from "../../static/avatars/avatar-3.png"
+import avatar4 from "../../static/avatars/avatar-4.png"
 
 import ScrollAnimation from "react-animate-on-scroll"
 
@@ -27,7 +25,7 @@ function Index({ data }) {
       <ScrollAnimation animateIn="fadeIn">
         <section className="w-full h-auto ">
           <div className="mx-auto | flex flex-col sm:flex-row ">
-            <div className="w-full md:w-1/2 |  bg-bl-00 | flex flex-col justify-center items-center | py-40 ">
+            <div className="w-full md:w-1/2 h-auto |  bg-bl-00 | flex flex-col justify-center items-center | py-8 md:py-10 lg:py-40 ">
               <h2 className="w-1/2 | text-2xl md:text-6xl font-bold">
                 We <span className="cl-yllw-00">build</span> more than 20 years.
               </h2>
@@ -51,7 +49,7 @@ function Index({ data }) {
 
       {/* FEATURED PROJECTS */}
 
-      <section className="flex flex-col items-center bg-gray-200 p-16">
+      <section className="flex flex-col justify-center items-center bg-gray-200 p-16">
         <h2 className=" text-2xl md:text-4xl font-bold mb-4">
           Featured projects
         </h2>
@@ -61,24 +59,22 @@ function Index({ data }) {
           minus fuga culpa vitae magnam voluptates? Provident eveniet delectus
           nobis sapiente, libero voluptas.
         </p>
-        <ScrollAnimation animateIn="fadeIn">
-          <div className="flex flex-col lg:flex-row justify-center">
-            {data.allWordpressPost.edges.map(post => (
-              <>
-                <RefCard
-                  title={post.node.acf.title}
-                  slug={post.node.slug}
-                  img={post.node.acf.img.localFile.childImageSharp.fixed}
-                />
-              </>
-            ))}
-          </div>
-          <Link to="/" className="block">
-            <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 rounded font-bold transition-all duration-150 ease-in">
-              More...
-            </button>
-          </Link>
-        </ScrollAnimation>
+        <div className="flex flex-col lg:flex-row justify-center">
+          {data.allWordpressPost.edges.map(post => (
+            <>
+              <RefCard
+                title={post.node.acf.title}
+                slug={post.node.slug}
+                img={post.node.acf.img.localFile.childImageSharp.fixed}
+              />
+            </>
+          ))}
+        </div>
+        <Link to="/references" className="">
+          <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 rounded font-bold transition-all duration-150 ease-in">
+            More...
+          </button>
+        </Link>
       </section>
 
       {/* TESTIMONIALS */}

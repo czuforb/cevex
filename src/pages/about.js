@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import avatar from "../imgs/avatar.png"
+import { Link } from "gatsby"
 
 const About = () => {
   return (
@@ -39,15 +40,45 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore
             distinctio ipsam consectetur maiores.
           </p>
-          <div class="w-full mx-auto flex flex-wrap justify-center m-12">
-            <div class="w-3/4 md:w-2/6 lg:w-1/4 lg:text-center bg-bl-00 rounded mx-8 p-8 shadow-xl hover:shadow-2xl transition-all duration-200">
-              <h2 class="text-gray-100 text-lg md:text-2xl font-bold mb-8">
+          <div class="w-3/3 text-left mx-auto flex flex-wrap justify-center m-12 ">
+            <div class="w-3/4 md:w-2/6 lg:w-1/4  rounded mx-8 p-8 shadow-xl bg-gray-400 hover:bg-gray-500 hover:shadow-2xl transition-all duration-200">
+              <h2 class="text-gray-900 text-lg md:text-2xl font-bold mb-8">
                 Vivamus vestibulum ntulla nec ante
               </h2>
-              <p class="text-gray-200 text-base leading-loose">
+              <p class="text-gray-800 text-base leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <Link to="/references" className="mt-4 block">
+                See related works...
+              </Link>
+            </div>
+            <div class="transition duration-200 ease-in group w-3/4 md:w-2/6 lg:w-1/4  rounded mx-8 p-8 shadow-xl bg-gray-400 hover:bg-gray-500 hover:shadow-2xl transition-all duration-200">
+              <h2 class="text-gray-900 text-lg md:text-2xl font-bold mb-8">
+                Vivamus vestibulum ntulla nec ante
+              </h2>
+              <p class="text-gray-800 text-base leading-loose">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <Link to="/references" className="mt-4 block">
+                See related works...
+              </Link>
+            </div>
+            <div class="w-3/4 md:w-2/6 lg:w-1/4  rounded mx-8 p-8 shadow-xl bg-gray-400 hover:bg-gray-500 hover:shadow-2xl transition-all duration-200">
+              <h2 class="text-gray-900 text-lg md:text-2xl font-bold mb-8">
+                Vivamus vestibulum ntulla nec ante
+              </h2>
+              <p class="text-gray-800 text-base leading-loose">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <Link
+                to="/references"
+                className="mt-4 block group-hover:font-bold"
+              >
+                See related works...
+              </Link>
             </div>
           </div>
         </section>

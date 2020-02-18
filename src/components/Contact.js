@@ -2,8 +2,8 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section className="w-full bg-gray-300">
-      <div className="lg:w-3/4 mx-auto flex flex-col md:flex-row justify-start  p-4">
+    <section id="contact" className="contact-bg">
+      <div className="z-20 lg:w-3/4 mx-auto flex flex-col md:flex-row justify-start  p-4">
         <div className="w-full md:w-1/3 lg:w-1/3 mx-auto my-auto">
           <h3 className="text-xl md:text-4xl font-bold mb-4 ">
             Get in touch with us!

@@ -5,19 +5,7 @@
 @tailwind utilities;
 
 .hero-bg {
-  background-image: url("../imgs/hero-background.svg");
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-bg2 {
-  background-image: url("../imgs/backgrounds/background-road1.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-bg3 {
-  background-image: url("../imgs/backgrounds/background-road2.png");
+  background-image: url("/static/hero-background.png");
   background-position: center;
   background-size: cover;
 }
