@@ -6,10 +6,10 @@ import Footer from "../components/Footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <Nav />
-      <main className="font-sans antialiased">{children}</main>
-      <Contact />
-      <Footer />
+      <Nav className="font-body antialiased" />
+      <main className="font-body antialiased">{children}</main>
+      <Contact className="font-body antialiased" />
+      <Footer className="font-body antialiased" />
     </>
   )
 }

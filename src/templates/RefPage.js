@@ -1,10 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
 import InfoBox from "../components/InfoBox"
-import RefCard from "../components/RefCard"
 
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+
+import image1 from "../../static/image4.png"
+import image2 from "../../static/image6.png"
+
+import gallery1 from "../../static/gallery/gallery1.png"
+import gallery2 from "../../static/gallery/gallery2.png"
+import gallery3 from "../../static/gallery/gallery3.png"
 
 export const query = graphql`
   query($id: Int!) {
@@ -16,6 +22,11 @@ export const query = graphql`
         text
         year
         place
+        referee
+        refphone
+        type
+        status
+        budget
         img {
           source_url
           localFile {
@@ -36,7 +47,7 @@ const template = ({ data }) => {
     <Layout>
       {/* HERO SECTION */}
       <Link
-        to="/"
+        to="/references"
         className="hidden md:block opacity-50 group hover:opacity-100 bg-gray-200 rounded-full p-4 m-10 fixed"
       >
         <svg
@@ -54,7 +65,7 @@ const template = ({ data }) => {
         <span className="hidden group-hover:block">Back</span>
       </Link>
 
-      <section className="n mx-auto w-full lg:w-3/4 h-auto bg-gray-200">
+      <section className="mt-32 mx-auto w-full lg:w-3/4 h-auto bg-gray-200">
         <div className="md:hidden mx-auto w-full ">
           <div className="w-3/4 ml-8">
             <h1 className="text-4xl font-bold">
@@ -109,9 +120,14 @@ const template = ({ data }) => {
           key={data.wordpressAcfPosts.wordpress_id}
           year={data.wordpressAcfPosts.acf.year}
           place={data.wordpressAcfPosts.acf.place}
+          type={data.wordpressAcfPosts.acf.type}
+          referee={data.wordpressAcfPosts.acf.referee}
+          refphone={data.wordpressAcfPosts.acf.refphone}
+          status={data.wordpressAcfPosts.acf.status}
+          budget={data.wordpressAcfPosts.acf.budget}
         />
-        <div className="mx-4">
-          <h2 className="text-xl font-bold">Project overview</h2>
+        <div className="">
+          <h2 className="font-display text-xl font-bold">Project overview</h2>
           <p className="text-lg leading-loose my-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             eveniet dolore impedit doloribus laboriosam incidunt quas non
@@ -128,6 +144,7 @@ const template = ({ data }) => {
             quod quae perferendis debitis laboriosam similique.
           </p>
         </div>
+        <h2 className="font-display text-xl font-bold mb-4 ">Location </h2>
         <div class="w-full h-40 rounded bg-gray-200 flex justify-center items-center">
           <h3 class="text-gray-600">Google Maps placeholder...</h3>
         </div>
@@ -144,9 +161,9 @@ const template = ({ data }) => {
               d="M5.41 11H21a1 1 0 0 1 0 2H5.41l5.3 5.3a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.42 1.4L5.4 11z"
             />
           </svg>
-          <div className="w-40 h-40 bg-gray-300 shadow-lg m-4 mt-6"></div>
-          <div className="w-40 h-40 bg-gray-300 shadow-2xl m-4"></div>
-          <div className="w-40 h-40 bg-gray-300 shadow-lg m-4 mt-6"></div>
+          <img src={gallery1} className="object shadow-lg m-4 mt-6" />
+          <img src={gallery2} className="object shadow-xl m-4 mt-6 scale-150" />
+          <img src={gallery3} className="object shadow-lg m-4 mt-6" />
           <svg
             className="inline my-auto ml-8"
             xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +177,67 @@ const template = ({ data }) => {
             />
           </svg>
         </div>
-        <h2 cllasName="mx-auto text-2xl">Related works</h2>
+        <h2 className="font-display text-xl font-bold">Related works</h2>
+        <div className="w-full flex flex-row my-8">
+          <Link
+            to="/references"
+            className={` w-10/12 md:w-11/12 lg:w-1/2 flex flex-col mb-8 px-3 mx-auto shadow-xl hover:shadow-2xl`}
+          >
+            <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+              <img class="w-full" src={image1} alt="Sunset in the mountains" />
+              <div class="p-4 flex flex-col justify-between ">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 leading-normal truncante">
+                  Road building Noszvaj
+                </h3>
+                <Link class="inline-flex items-center text-gray-600">
+                  <span class="text-base">Read More</span>
+                  <svg
+                    className="inline ml-2 stroke-current text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    stroke-width="1"
+                  >
+                    <path
+                      class="heroicon-ui"
+                      d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/references"
+            className={` w-10/12 md:w-11/12 lg:w-1/2 flex flex-col mb-8 px-3 mx-auto shadow-xl hover:shadow-2xl`}
+          >
+            <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+              <img class="w-full" src={image2} alt="Sunset in the mountains" />
+              <div class="p-4 flex flex-col justify-between ">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 leading-normal truncante">
+                  New road Tard
+                </h3>
+                <Link class="inline-flex items-center text-gray-600">
+                  <span class="text-base">Read More</span>
+                  <svg
+                    className="inline ml-2 stroke-current text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    stroke-width="1"
+                  >
+                    <path
+                      class="heroicon-ui"
+                      d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </Layout>
   )

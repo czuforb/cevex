@@ -1,9 +1,8 @@
 module.exports = {
   theme: {
-    extends: {
-      colors: {
-        "default-blue": "#002a54",
-      },
+    fontFamily: {
+      display: ["Noto Sans"],
+      body: ["Open Sans"],
     },
   },
   variants: {},

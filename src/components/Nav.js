@@ -22,17 +22,21 @@ const Nav = () => {
   return (
     <>
       {/* DESKTOP NAVIGATION */}
-      <div className="fixed top-0 w-full h-auto py-8  mx-auto flex justify-center z-50 overflow-hidden transition-all ease-in duration-500">
+      <div className="font-display fixed top-0 w-full h-auto py-8  mx-auto flex justify-center z-50 overflow-hidden transition-all ease-in duration-500">
         <nav
           data-active={scrolled}
           className="hidden md:flex w-3/4 text-center justify-end align-center py-2 px-10 rounded-md"
         >
           <div href="/" className="mr-auto block text-left">
-            <Link to="/" className="text-2xl font-bold">
+            <Link
+              to="/"
+              className={`text-4xl text-gray-100 font-bold {logo}
+              hover:text-yellow-400`}
+            >
               Cevex
             </Link>
           </div>
-          <ul className="list-none flex justify-around">
+          <ul className="text-2xl list-none flex justify-around">
             <li>
               <Link
                 to="/about"
@@ -50,7 +54,7 @@ const Nav = () => {
               </Link>
             </li>
             <Link to="/" className="">
-              <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 rounded font-bold transition-all duration-150 ease-in">
+              <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 rounded font-bold shadow-xl hover:shadow-2xl transition-all duration-150 ease-in">
                 Contact us
               </button>
             </Link>
@@ -60,7 +64,7 @@ const Nav = () => {
         {/* MOBILE NAVIGATION */}
 
         <nav className="fixed w-3/4 flex flex-row items-center mx-auto md:hidden z-50 transition-all ease-in p-2 px-4 duration-500 rouded">
-          <div href="/" className="mr-auto block text-left">
+          <div className="logo mr-auto block text-left">
             <Link to="/" className="text-2xl font-bold">
               Cevex
             </Link>

@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="mx-auto w-3/4 overflow-hidden flex flex-col  lg:flex-row flex-wrap">
         <div className="lg:w-1/4">
           <Link to="/" className="w-1/2">
-            <h1 className="text-xl font-bold text-gray-100">
+            <h1 className="font-display text-2xl font-bold text-gray-100">
               Cevex
-              <span className="w-1/6 border-b block h-1 mb-2"></span>
+              <span className="w-1/6 border-b block h-1 mb-2 opacity-75"></span>
             </h1>
           </Link>
           <p className="lg:w-3/4 my-4 leading-relaxed text-gray-100">
@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="lg:w-1/4">
-          <h3 className="text-xl font-bold text-gray-300">
+          <h3 className="font-display text-xl font-bold text-gray-300">
             Information
             <span className="w-1/6 border-b block h-1 mb-2"></span>
           </h3>
@@ -60,7 +60,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="rounded w-1/4">
-          <h3 className="text-xl font-bold text-gray-100">
+          <h3 className="font-display text-xl font-bold text-gray-100">
             Services
             <span className="w-1/6 border-b block h-1 mb-2"></span>
           </h3>
@@ -68,7 +68,7 @@ const Footer = () => {
             <li>
               <Link
                 className="font-medium text-lg hover:text-blue-400 text-gray-100"
-                to="/"
+                to="/references"
               >
                 Road building
               </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
             <li>
               <Link
                 className="font-medium text-lg hover:text-blue-400 text-gray-100"
-                to="/"
+                to="/references"
               >
                 Civil Engineering
               </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
             <li>
               <Link
                 className="font-medium text-lg hover:text-blue-400 text-gray-100"
-                to="/"
+                to="/references"
               >
                 Landwork
               </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
             <li>
               <Link
                 className="font-medium text-lg hover:text-blue-400 text-gray-100"
-                to="/"
+                to="/references"
               >
                 Other infrastucture
               </Link>
@@ -103,7 +103,7 @@ const Footer = () => {
           <img className="w-3/4 h-3/4" src={euBadge} alt="Szécheny 2020"></img>
         </div>
       </div>
-      <div className="pt-4 mt-4 text-gray-700 border-t border-gray-800 text-center w-3/4 mx-auto">
+      <div className="opacity-50 pt-4 mt-4 text-gray-300 border-t border-gray-400 text-center w-3/4 mx-auto">
         © 2020 Cevex
       </div>
     </footer>
