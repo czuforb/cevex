@@ -43,6 +43,7 @@ const Contact = () => {
             name="contact"
             method="POST"
             data-netlify="true"
+            etlify-honeypot="bot-field"
             class="m-4 p-10 bg-white rounded shadow-xl"
           >
             <div class="">
