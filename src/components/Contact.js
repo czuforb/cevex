@@ -57,6 +57,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Name"
                 aria-label="Name"
+                name="Name"
               />
             </div>
             <div class="mt-2">
@@ -68,6 +69,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Email"
                 aria-label="Email"
+                name="email"
               />
             </div>
             <div class="mt-2">
@@ -80,6 +82,7 @@ const Contact = () => {
                 required=""
                 placeholder="Your Message"
                 aria-label="Email"
+                name="message"
               />
             </div>
 
