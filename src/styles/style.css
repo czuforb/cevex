@@ -18,12 +18,10 @@
   background-size: fit;
 }
 
-nav[data-active="true"] {
-  @apply shadow-xl bg-gray-100;
-}
-
-.scrolldown {
-  animation: float 6s ease-in-out infinite;
+.no-form {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @keyframes float {

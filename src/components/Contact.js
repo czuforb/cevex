@@ -39,7 +39,12 @@ const Contact = () => {
           <div className="w-3/4 h-24 rounded mx-auto"></div>
         </div>
         <div class="w-ful lg:w-1/2">
-          <form class="m-4 p-10 bg-white rounded shadow-xl">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            class="m-4 p-10 bg-white rounded shadow-xl"
+          >
             <div class="">
               <label class="block text-sm text-gray-600 mb-2 font-bold">
                 Name

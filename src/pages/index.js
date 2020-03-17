@@ -23,46 +23,41 @@ function Index({ data }) {
       <Hero />
       {/* FEATURE */}
       <ScrollAnimation animateIn="fadeIn">
-        <section className="w-full h-auto ">
-          <div className="mx-auto | flex flex-col sm:flex-row sm:flex-row-reverse ">
-            <div className="w-full md:w-1/2 h-auto |  bg-bl-00 | flex flex-col justify-center items-center | py-8 md:py-10 lg:py-40 ">
-              <h2 className="w-1/2 | text-2xl md:text-5xl font-bold text-gray-100">
-                We are <span className="cl-yllw-00">building</span> in the
-                industry for{" "}
-                <span className="cl-yllw-00">more than 20 years</span>.
-              </h2>
-            </div>
-            <div className="w-full sm:w-1/2 | flex flex-col justify-center items-center | my-12 ">
-              <h2 className="font-display text-2xl mb-4 font-bold ml-32 mr-auto">
-                About us
-              </h2>
-              <p className="w-3/4 mx-auto sm:mx-0 text-xl leading-loose">
-                Our company has been involved in domestic construction design
-                and construction since 1998 in various forms of company. The
-                Company mainly carries out its construction activities in Borsod
-                and Heves counties. Our headquarters are in Miskolc and our
-                sites are in Edelény and Tard. In line with the increased
-                demands, we strive to use state-of-the-art technologies in our
-                work and to always comply with environmental and safety
-                regulations.
-                <Link className="block mx-auto md:mx-0 mt-10" to="/about">
-                  <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 shadow-xl hover:shadow-2xl rounded font-bold transition-all duration-150 ease-in">
-                    Read our story
-                  </button>
-                </Link>
-              </p>
-            </div>
+        <section className="w-full h-auto flex flex-col md:flex-row flex-1">
+          <div className="md:w-1/2 bg-bl-00 p-4">
+            <h2 className="text-center text-2xl md:text-5xl font-bold text-gray-100">
+              We are <span className="cl-yllw-00">building</span> in the
+              industry for{" "}
+              <span className="cl-yllw-00">more than 20 years</span>.
+            </h2>
+          </div>
+          <div className="md:w-1/2 bg-gray-200 p-4">
+            <h2 className="font-display text-2xlfont-bold">About us</h2>
+            <p className="text-xl leading-loose">
+              Our company has been involved in domestic construction design and
+              construction since 1998 in various forms of company. The Company
+              mainly carries out its construction activities in Borsod and Heves
+              counties. Our headquarters are in Miskolc and our sites are in
+              Edelény and Tard. In line with the increased demands, we strive to
+              use state-of-the-art technologies in our work and to always comply
+              with environmental and safety regulations.
+              <Link className="block mx-auto md:mx-0 mt-10" to="/about">
+                <button className="py-2 px-3 bg-yllw-00 hover:bg-yellow-500 shadow-xl hover:shadow-2xl rounded font-bold transition-all duration-150 ease-in">
+                  Read our story
+                </button>
+              </Link>
+            </p>
           </div>
         </section>
       </ScrollAnimation>
 
       {/* FEATURED PROJECTS */}
 
-      <section className="flex flex-col justify-center items-center bg-gray-200 p-16">
-        <h2 className=" text-2xl md:text-4xl font-bold mb-4">
+      <section className="w-full p-4">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">
           Featured projects
         </h2>
-        <div className="flex flex-col lg:flex-row justify-center bg-transparent">
+        <div className="flex flex-wrap flex-col md:flex-row justify-around my-8 mx-auto">
           {data.allWordpressPost.edges.map(post => (
             <>
               <RefCard

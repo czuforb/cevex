@@ -4,38 +4,34 @@ import heroBackground from "../../static/backgrounds/hero-background.png"
 
 const Hero = () => {
   return (
-    <div className="w-full bg-bl-00 h-screen">
-      <section className="font-display w-full h-screen | text-center flex flex-col ml-40 justify-center">
-        <img
-          src={heroBackground}
-          alt="Hero"
-          className="absolute top-0 right-0 object-cover w-1/2 h-screen"
-        />
-        <div className="rounded py-6 z-10 flex flex-col text-left w-full bg-gray-100 shadow-lg lg:w-1/2">
-          <div className="w-10/12 mx-auto">
-            <h1 className="text-4xl md:text-5xl cl-bl-00 font-bold leading-tight">
-              Cevex is a<span className="cl-yllw-00"> road making </span>
-              company in the eastern region.
-            </h1>
-            <p className="cl-bl-00 text-xl md:text-2xl font-normal leading-normal my-4">
-              Our company builds roads and design infrastucture with more than
-              20 years experience in the industry.
-            </p>
-            <div className="flex">
-              <Link to="#contact">
-                <button class="text-gray-900 py-4 px-10 bg-yllw-00 hover:bg-yellow-500 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded my-10">
-                  Get in touch
-                </button>
-              </Link>
-              <Link to="/references">
-                <button class="text-gray-900 ml-6 py-4 px-10 bg-gray-300 hover:bg-gray-400 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded my-10">
-                  See references
-                </button>
-              </Link>
-            </div>
-          </div>
+    <section className="w-full h-screen bg-bl-00 relative ">
+      <img
+        src={heroBackground}
+        alt="Hero"
+        className="z-0 w-full lg:h-screen  lg:w-1/2 absolute inset-y-0 right-0"
+      />
+      <div className="flex flex-col justify-center w-11/12 lg:w-1/2 h-auto mx-4 md:mx-8 mt-48 sm:mt-64 lg:mt-64 lg:ml-40 absolute bg-gray-100 z-10 rounded">
+        <h1 className="text-2xl md:text-5xl cl-bl-00 font-bold leading-tight">
+          Cevex is a<span className="cl-yllw-00"> road making </span>
+          company in the eastern region.
+        </h1>
+        <p className="cl-bl-00 text-lg md:text-2xl font-normal leading-normal my-4">
+          Our company builds roads and design infrastucture with more than 20
+          years experience in the industry.
+        </p>
+        <div className="mt-8 lg:mt-1 flex flex-col md:flex-row">
+          <Link to="#contact">
+            <button class="text-gray-900 py-4 px-10 bg-yllw-00 hover:bg-yellow-500 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded lg:my-10">
+              Get in touch
+            </button>
+          </Link>
+          <Link to="/references">
+            <button class="text-gray-900 mt-4 md:mt-0 md:ml-6 py-4 px-10 bg-gray-300 hover:bg-gray-400 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded lg:my-10">
+              References
+            </button>
+          </Link>
         </div>
-      </section>
+      </div>
       <div className="absolute bottom-0 mb-10 w-full z-50">
         <svg
           className="scrolldown stroke-0 mx-auto text-gray-100 fill-current stroke-current"
@@ -50,7 +46,7 @@ const Hero = () => {
           />
         </svg>
       </div>
-    </div>
+    </section>
   )
 }
 

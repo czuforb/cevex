@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <Nav className="font-body antialiased" />
+      <Nav className="antialiased" />
       <main className="font-body antialiased">{children}</main>
       <Contact className="font-body antialiased" />
       <Footer className="font-body antialiased" />
