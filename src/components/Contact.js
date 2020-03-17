@@ -41,11 +41,13 @@ const Contact = () => {
         <div class="w-ful lg:w-1/2">
           <form
             name="contact"
-            method="POST"
+            method="post"
             data-netlify="true"
-            etlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             class="m-4 p-10 bg-white rounded shadow-xl"
           >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div class="">
               <label class="block text-sm text-gray-600 mb-2 font-bold">
                 Name
