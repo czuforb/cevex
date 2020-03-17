@@ -47,7 +47,7 @@ const Contact = () => {
             class="m-4 p-10 bg-white rounded shadow-xl"
           >
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="contact" value="contact" />
             <div class="">
               <label class="block text-sm text-gray-600 mb-2 font-bold">
                 Name
@@ -77,7 +77,6 @@ const Contact = () => {
               <input
                 class="w-full h-40 px-5 text-gray-700 bg-gray-200 rounded mb-4"
                 type="text"
-                required=""
                 placeholder="Your Message"
                 aria-label="Email"
               />
