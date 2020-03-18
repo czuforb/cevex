@@ -4,29 +4,29 @@ import heroBackground from "../../static/backgrounds/hero-background.png"
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-bl-00 relative ">
+    <section className="w-full h-screen bg-bl-00 relative">
       <img
         src={heroBackground}
         alt="Hero"
-        className="z-0 w-full lg:h-screen  lg:w-1/2 absolute inset-y-0 right-0"
+        className="z-0 w-full h-screen  lg:w-1/2 absolute inset-y-0 right-0"
       />
-      <div className="flex flex-col justify-center w-11/12 lg:w-1/2 h-auto mx-4 md:mx-8 mt-48 sm:mt-64 lg:mt-64 lg:ml-40 absolute bg-gray-100 z-10 rounded">
-        <h1 className="text-2xl md:text-5xl cl-bl-00 font-bold leading-tight">
+      <div className="flex flex-col justify-center w-11/12 lg:w-1/2 h-auto mx-4 md:mx-8 mt-48 sm:mt-64 lg:mt-64 lg:ml-40 absolute bg-gray-100 z-10 rounded py-12 px-4">
+        <h1 className="text-5xl md:text-6xl cl-bl-00 font-bold leading-tight">
           Cevex is a<span className="cl-yllw-00"> road making </span>
           company in the eastern region.
         </h1>
-        <p className="cl-bl-00 text-lg md:text-2xl font-normal leading-normal my-4">
+        <p className="cl-bl-00 text-lg md:text-2xl font-normal leading-normal mt-2 leading-loose">
           Our company builds roads and design infrastucture with more than 20
           years experience in the industry.
         </p>
-        <div className="mt-8 lg:mt-1 flex flex-col md:flex-row">
+        <div className="mt-8 lg:mt-1 flex">
           <Link to="#contact">
             <button class="text-gray-900 py-4 px-10 bg-yllw-00 hover:bg-yellow-500 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded lg:my-10">
               Get in touch
             </button>
           </Link>
           <Link to="/references">
-            <button class="text-gray-900 mt-4 md:mt-0 md:ml-6 py-4 px-10 bg-gray-300 hover:bg-gray-400 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded lg:my-10">
+            <button class="text-gray-900 ml-4 md:mt-0 md:ml-6 py-4 px-10 bg-gray-300 hover:bg-gray-400 shadow-xl hover:shadow-2xl rounded-sm font-bold text-2xl rounded lg:my-10">
               References
             </button>
           </Link>

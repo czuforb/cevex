@@ -8,6 +8,10 @@ module.exports = {
       "500": "500px",
     },
   },
-  variants: {},
+  variants: {
+    marginLeft: ["first"],
+    marginRight: ["last"],
+    borderColor: ["first"],
+  },
   plugins: [],
 }

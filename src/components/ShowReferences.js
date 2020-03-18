@@ -109,7 +109,7 @@ const ShowReferences = ({ info }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-start">
           {sorted.map(post => (
             <>
               <RefCard

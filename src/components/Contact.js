@@ -2,24 +2,22 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-bg bg-gray-200 p-16">
-      <div className="z-20 lg:w-3/4 mx-auto flex flex-col md:flex-row justify-start p-4 bg-gray-400 rounded shadow-xl">
+    <section id="contact" className="contact-bg bg-gray-200 w-full p-6">
+      <div className="z-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-start p-4 bg-gray-400 rounded shadow-xl">
         <div className="w-full md:w-1/3 lg:w-1/3 mx-auto my-auto">
-          <h3 className="font-display text-xl md:text-4xl font-bold mb-4 ">
+          <h3 className="font-display text-4xl font-bold mb-4">
             Get in touch with us!
           </h3>
-          <p className="text-base md:text-lg text-gray-800">
+          <p className="text-xl text-gray-800">
             If you are in front of an infrastructure related project or need
             consultancy from an experimented technical engineer, please don't
             hesitet and call ass. We are waiting for your call.
-            <p className="font-bold my-4 text-gray-800">
-              {" "}
-              Monday - Friday | 9:00 - 18:00{" "}
-            </p>
           </p>
-          <div class="h-1 w-24 opacity-75 my-4 rounded"></div>
-          <div className="flex justify-around p-8 bg-gray-300">
-            <div className="w-1/2 text-lg">
+          <p className="font-bold my-4 text-gray-600 text-xl">
+            Monday - Friday | 9:00 - 18:00
+          </p>
+          <div className="p-6 flex justify-around text-xl bg-gray-300">
+            <div className="p-2">
               <h1 className="font-bold font-display">Joseph Engineer</h1>
               <p className="">CEO & Founder</p>
               <a className="block" href="tel:+36305537883">
@@ -29,55 +27,57 @@ const Contact = () => {
                 czj@cevex.hu
               </a>
             </div>
-            <div className="w-1/3 text-lg">
+            <div className="p-2">
               <h1 className="font-bold font-display">Cevex Kft.</h1>
               <p className="">Béke út 167.</p>
               <p className="">3416 Tard</p>
               <p className="">Hungary</p>
             </div>
           </div>
-          <div className="w-3/4 h-24 rounded mx-auto"></div>
         </div>
-        <div class="w-ful lg:w-1/2">
+        <div class="mt-8 md:m-0 w-ful lg:w-1/2">
+          <h3 className="font-display text-4xl font-bold mb-4 ">
+            Send us a message!
+          </h3>
           <form
             name="contact"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            class="m-4 p-10 bg-white rounded shadow-xl"
+            class="text-xl"
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
-            <div class="">
-              <label class="block text-sm text-gray-600 mb-2 font-bold">
+            <div>
+              <label class="block text-lg text-gray-700 mb-2 font-bold">
                 Name
               </label>
               <input
-                class="w-full px-5 py-4 text-gray-600 bg-gray-200 rounded mb-4"
+                class="w-3/4 px-4 py-2 text-gray-900 bg-gray-200 rounded mb-4 focus:border-teal-500"
                 type="text"
                 placeholder="Your Name"
                 aria-label="Name"
                 name="Name"
               />
             </div>
-            <div class="mt-2">
-              <label class="block text-sm text-gray-600 font-bold mb-2">
-                Email
+            <div>
+              <label class="block text-lg text-gray-700 mb-2 font-bold">
+                E-mail
               </label>
               <input
-                class="w-full px-5 py-4 text-gray-700 bg-gray-200 rounded mb-4"
-                type="text"
-                placeholder="Your Email"
-                aria-label="Email"
-                name="email"
+                class="w-3/4 px-4 py-2 text-gray-900 bg-gray-200 rounded mb-4 focus:border-teal-500"
+                type="email"
+                placeholder="Your e-mail"
+                aria-label="E-mail"
+                name="E-mail"
               />
             </div>
             <div class="mt-2">
-              <label class="block text-sm text-gray-600 font-bold mb-2">
+              <label class="block text-lg text-gray-700 mb-2 font-bold">
                 Message
               </label>
-              <input
-                class="w-full h-40 px-5 text-gray-700 bg-gray-200 rounded mb-4"
+              <textarea
+                class="w-3/4 px-4 py-2 text-gray-700 bg-gray-200 rounded mb-4"
                 type="text"
                 required=""
                 placeholder="Your Message"
@@ -86,9 +86,9 @@ const Contact = () => {
               />
             </div>
 
-            <div class="mt-4">
+            <div class="mt-2">
               <button
-                class="px-4 py-1 font-bold tracking-wider bg-yllw-00 rounded"
+                className="text-xl py-4 px-6 bg-yllw-00 hover:bg-yellow-300 shadow-xl hover:shadow-2xl rounded font-bold transition-all duration-150 ease-in"
                 type="submit"
               >
                 Send Message

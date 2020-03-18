@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 const RefCard = ({ title, slug, img, type }) => {
   return (
-    <div className="max-w-sm overflow-hidden rounded bg-gray-300 shadow-md my-4 relative">
+    <div className="max-w-sm overflow-hidden rounded bg-gray-300 shadow-md my-6 mr-8 relative">
       <p className="absolute z-10 p-1 m-2 bg-gray-100 rounded">{type}</p>
       <Img class="w-full" fixed={img} alt={title} />
       <div class="py-4 px-6 flex flex-col justify-start h-40">
